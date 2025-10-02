@@ -1,4 +1,4 @@
-import { DollarSign, Sparkles, Shield, Headphones } from "lucide-react";
+import { DollarSign, Clock, Shield, MessageCircle } from "lucide-react";
 
 const benefits = [
   {
@@ -7,7 +7,7 @@ const benefits = [
     description: "Twórz oferty wyjazdów i generuj dodatkowe przychody w wysokości tysięcy złotych – z łatwością, podobnie jak udostępnianie nieruchomości na Airbnb."
   },
   {
-    icon: Sparkles,
+    icon: Clock,
     title: "Prostota organizacji",
     description: "Utwórz ofertę w kilku krokach, wprowadzaj zmiany w dowolnym momencie, bez barier technicznych."
   },
@@ -17,7 +17,7 @@ const benefits = [
     description: "Zapewniamy pełną ochronę prawną, licencje oraz ubezpieczenia – działaj bezpiecznie, z kompleksowym wsparciem."
   },
   {
-    icon: Headphones,
+    icon: MessageCircle,
     title: "Pomoc i wsparcie",
     description: "Indywidualna asysta od doświadczonych freelancerów, całodobowa linia pomocy oraz zaawansowane narzędzia promocyjne."
   }
@@ -35,22 +35,18 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index}
-              className="bg-card p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+              className="bg-card p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center"
             >
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <benefit.icon className="w-6 h-6 text-primary" />
-                  </div>
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <benefit.icon className="w-6 h-6 text-primary" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-foreground">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {benefit.description}
-                  </p>
-                </div>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">
+                  {benefit.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {benefit.description}
+                </p>
               </div>
             </div>
           ))}

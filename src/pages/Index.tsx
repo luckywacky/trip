@@ -5,6 +5,7 @@ import Introduction from "@/components/Introduction";
 import Benefits from "@/components/Benefits";
 import Protection from "@/components/Protection";
 import ContactForm from "@/components/ContactForm";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -18,6 +19,7 @@ const Index = () => {
         <Benefits />
         <Protection />
         <ContactForm />
+        <FAQ />
       </main>
       <Footer />
     </div>
