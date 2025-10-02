@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import EarningsSlider from "@/components/EarningsSlider";
 import Introduction from "@/components/Introduction";
 import Benefits from "@/components/Benefits";
 import Protection from "@/components/Protection";
@@ -12,6 +13,7 @@ const Index = () => {
       <Header />
       <main className="pt-16">
         <Hero />
+        <EarningsSlider />
         <Introduction />
         <Benefits />
         <Protection />
