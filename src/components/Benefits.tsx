@@ -4,22 +4,22 @@ const benefits = [
   {
     icon: DollarSign,
     title: "Zarabiaj na pasji",
-    description: "Twórz oferty wyjazdów i generuj dodatkowe przychody w wysokości tysięcy złotych – z łatwością, podobnie jak udostępnianie nieruchomości na Airbnb."
+    description: "Organizuj wyjazdy tematyczne i retreaty. Zyskaj dodatkowe tysiące złotych, dzieląc się tym, co kochasz."
   },
   {
     icon: Clock,
-    title: "Prostota organizacji",
-    description: "Utwórz ofertę w kilku krokach, wprowadzaj zmiany w dowolnym momencie, bez barier technicznych."
+    title: "Łatwa organizacja",
+    description: "Dodaj ofertę w kilka minut. Aktualizuj ją w dowolnym momencie – szybko i bez barier technicznych."
   },
   {
     icon: Shield,
-    title: "Legalność i ochrona",
-    description: "Zapewniamy pełną ochronę prawną, licencje oraz ubezpieczenia – działaj bezpiecznie, z kompleksowym wsparciem."
+    title: "Pełna ochrona",
+    description: "Prawo, licencje i ubezpieczenia zapewniamy my. Ty skupiasz się na pasji, a my dbamy o bezpieczeństwo Twoje i uczestników."
   },
   {
     icon: MessageCircle,
-    title: "Pomoc i wsparcie",
-    description: "Indywidualna asysta od doświadczonych freelancerów, całodobowa linia pomocy oraz zaawansowane narzędzia promocyjne."
+    title: "Wsparcie 24/7",
+    description: "Masz pełne zaplecze. Opiekun, całodobowa pomoc i skuteczne narzędzia promocji wspierają Cię na każdym etapie."
   }
 ];
 

@@ -17,9 +17,9 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Oferuj swoje wyjazdy pasjonatom – Zarabiaj na podróżach dzięki naszej platformie!
+        <div className="max-w-4xl mx-auto flex flex-col items-center justify-center">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight text-center">
+            Zarabiaj na pasji – organizuj retreaty, campy i wyjazdy tematyczne bez zakładania biura podróży.
           </h1>
           <Button 
             onClick={scrollToContact}

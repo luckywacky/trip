@@ -55,7 +55,7 @@ const ContactForm = () => {
               Rozpocznij zarabianie na swoich wyjazdach!
             </h2>
             <p className="text-lg text-muted-foreground">
-              Podaj swoje dane, a skontaktujemy się, aby pomóc Ci rozpocząć działalność. Bez zobowiązań – tylko profesjonalne wsparcie.
+              Zostaw nam kontakt, a nasz zespół pokaże Ci, jak zarabiać na swoich wyjazdach.
             </p>
           </div>
 

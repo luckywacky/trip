@@ -7,20 +7,24 @@ import {
 
 const faqs = [
   {
-    question: "Czy potrzebuję biura podróży, aby organizować wyjazdy?",
-    answer: "Nie, nasza platforma zapewnia pełną zgodność z prawem turystycznym, licencje i ubezpieczenia. Skup się na pasji, a my zajmiemy się formalnościami."
+    question: "Czy muszę mieć biuro podróży, aby organizować wyjazdy?",
+    answer: "Nie, wszystko zorganizujesz przez naszą platformę – licencje, ubezpieczenia i wsparcie prawne są po naszej stronie."
   },
   {
     question: "Ile mogę zarobić na jednym wyjeździe?",
-    answer: "Zysk zależy od liczby uczestników – od 5 000 zł przy 10 osobach do 15 000 zł przy 20 osobach. Sprawdź suwak zarobkowy na górze!"
+    answer: "Zyski zależą od liczby uczestników i rodzaju wyjazdu – wielu organizatorów zarabia od kilku do kilkudziesięciu tysięcy złotych."
   },
   {
-    question: "Jakie wsparcie otrzymam przy organizacji?",
-    answer: "Oferujemy indywidualną asystę, narzędzia do planowania i całodobową infolinię. Od stworzenia oferty po promocję – wszystko w jednym miejscu."
+    question: "Jak rozpocząć przygodę z organizacją wyjazdów?",
+    answer: "Wystarczy, że dodasz swoją pierwszą ofertę w kilku krokach – my pomożemy Ci w każdym etapie."
   },
   {
-    question: "Czy platforma jest łatwa w obsłudze dla początkujących?",
-    answer: "Tak, interfejs jest intuicyjny – możesz stworzyć ofertę w kilka minut, nawet bez doświadczenia technicznego."
+    question: "Czy otrzymam wsparcie w promocji mojego wyjazdu?",
+    answer: "Tak! Oferujemy narzędzia promocyjne, wsparcie opiekuna oraz wskazówki, jak dotrzeć do Twojej społeczności."
+  },
+  {
+    question: "Czy potrzebuję specjalnych licencji lub ubezpieczenia?",
+    answer: "Nie musisz się o to martwić – zapewniamy wszystkie wymagane licencje i ubezpieczenia dla Ciebie i uczestników."
   }
 ];
 

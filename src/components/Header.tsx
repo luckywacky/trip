@@ -18,8 +18,7 @@ const Header = () => {
           
           <Button 
             onClick={scrollToContact}
-            variant="outline"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground"
           >
             Skontaktuj się
           </Button>
