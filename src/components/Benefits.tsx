@@ -46,10 +46,6 @@ const Benefits = () => {
             </div>
           ))}
         </div>
-        
-        <p className="text-center text-sm text-muted-foreground mt-8 max-w-2xl mx-auto">
-          Dodaj ofertę w kilka minut. Aktualizuj ją w dowolnym momencie – szybko i bez barier technicznych.
-        </p>
       </div>
     </section>
   );
