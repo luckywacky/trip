@@ -7,7 +7,6 @@ import { useToast } from "@/hooks/use-toast";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
-    lastName: "",
     email: ""
   });
   const { toast } = useToast();
@@ -16,10 +15,10 @@ const ContactForm = () => {
     e.preventDefault();
     
     // Basic validation
-    if (!formData.firstName || !formData.lastName || !formData.email) {
+    if (!formData.firstName || !formData.email) {
       toast({
         title: "Wypełnij wszystkie pola",
-        description: "Proszę podać imię, nazwisko i adres email.",
+        description: "Proszę podać imię i adres email.",
         variant: "destructive"
       });
       return;
@@ -43,7 +42,7 @@ const ContactForm = () => {
     });
 
     // Reset form
-    setFormData({ firstName: "", lastName: "", email: "" });
+    setFormData({ firstName: "", email: "" });
   };
 
   return (
@@ -60,33 +59,18 @@ const ContactForm = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="bg-card p-8 rounded-2xl shadow-lg space-y-6">
-            <div className="grid sm:grid-cols-2 gap-6">
-              <div>
-                <Label htmlFor="firstName" className="text-foreground font-medium mb-2 block">
-                  Imię
-                </Label>
-                <Input
-                  id="firstName"
-                  type="text"
-                  value={formData.firstName}
-                  onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                  className="w-full"
-                  placeholder="Jan"
-                />
-              </div>
-              <div>
-                <Label htmlFor="lastName" className="text-foreground font-medium mb-2 block">
-                  Nazwisko
-                </Label>
-                <Input
-                  id="lastName"
-                  type="text"
-                  value={formData.lastName}
-                  onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                  className="w-full"
-                  placeholder="Kowalski"
-                />
-              </div>
+            <div>
+              <Label htmlFor="firstName" className="text-foreground font-medium mb-2 block">
+                Imię
+              </Label>
+              <Input
+                id="firstName"
+                type="text"
+                value={formData.firstName}
+                onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                className="w-full"
+                placeholder="Jan"
+              />
             </div>
 
             <div>
@@ -105,7 +89,7 @@ const ContactForm = () => {
 
             <Button 
               type="submit"
-              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-6 text-lg"
+              className="w-full bg-black hover:bg-black/90 text-white font-semibold py-6 text-lg"
             >
               Wyślij kontakt
             </Button>

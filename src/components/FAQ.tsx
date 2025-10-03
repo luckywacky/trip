@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "Jak rozpocząć przygodę z organizacją wyjazdów?",
-    answer: "Wystarczy, że dodasz swoją pierwszą ofertę w kilku krokach – my pomożemy Ci w każdym etapie."
+    answer: "Po prostu zgłoś chęć organizacji wyjazdu, a my pomożemy Ci go w pełni zorganizować – od planowania, przez wsparcie uczestników, po promocję i widoczność Twojej oferty na naszej platformie."
   },
   {
     question: "Czy otrzymam wsparcie w promocji mojego wyjazdu?",
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: "Czy potrzebuję specjalnych licencji lub ubezpieczenia?",
-    answer: "Nie musisz się o to martwić – zapewniamy wszystkie wymagane licencje i ubezpieczenia dla Ciebie i uczestników."
+    answer: "Nie, nie musisz martwić się formalnościami – my zajmiemy się wszystkimi wymaganymi licencjami, ubezpieczeniami i kwestiami prawnymi, abyś mógł działać bezpiecznie."
   }
 ];
 

@@ -1,15 +1,10 @@
-import { DollarSign, Clock, Shield, MessageCircle } from "lucide-react";
+import { DollarSign, Shield, MessageCircle } from "lucide-react";
 
 const benefits = [
   {
     icon: DollarSign,
     title: "Zarabiaj na pasji",
     description: "Organizuj wyjazdy tematyczne i retreaty. Zyskaj dodatkowe tysiące złotych, dzieląc się tym, co kochasz."
-  },
-  {
-    icon: Clock,
-    title: "Łatwa organizacja",
-    description: "Dodaj ofertę w kilka minut. Aktualizuj ją w dowolnym momencie – szybko i bez barier technicznych."
   },
   {
     icon: Shield,
@@ -28,10 +23,10 @@ const Benefits = () => {
     <section className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 text-foreground">
-          Publikowanie oferty jest niezwykle proste
+          Organizacja wyjazdów bez komplikacji
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {benefits.map((benefit, index) => (
             <div 
               key={index}
@@ -51,6 +46,10 @@ const Benefits = () => {
             </div>
           ))}
         </div>
+        
+        <p className="text-center text-sm text-muted-foreground mt-8 max-w-2xl mx-auto">
+          Dodaj ofertę w kilka minut. Aktualizuj ją w dowolnym momencie – szybko i bez barier technicznych.
+        </p>
       </div>
     </section>
   );

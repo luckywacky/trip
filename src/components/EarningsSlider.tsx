@@ -6,8 +6,8 @@ const EarningsSlider = () => {
   const [participants, setParticipants] = useState([15]);
   
   const calculateEarnings = (value: number) => {
-    // Linear calculation: 10 = 5000, 15 = 10000, 20 = 15000
-    return ((value - 10) * 1000) + 5000;
+    // 1 person = 1000 zł
+    return value * 1000;
   };
 
   const earnings = calculateEarnings(participants[0]);
