@@ -6,8 +6,8 @@ const EarningsSlider = () => {
   const [participants, setParticipants] = useState([15]);
   
   const calculateEarnings = (value: number) => {
-    // 1 person = 1200 zł
-    return value * 1200;
+    // 1 person = 1250 zł
+    return value * 1250;
   };
 
   const earnings = calculateEarnings(participants[0]);
@@ -53,7 +53,7 @@ const EarningsSlider = () => {
                     {formattedEarnings} zł
                   </p>
                   <p className="text-base text-foreground">
-                    Zorganizuj retreat dla <span className="font-semibold text-primary">{participants[0]} osób</span> i zarób <span className="font-semibold text-primary">{formattedEarnings} zł</span> – my zajmiemy się resztą!
+                    Zorganizuj wyjazd dla <span className="font-semibold text-primary">{participants[0]} osób</span> i zarób <span className="font-semibold text-primary">{formattedEarnings} zł</span> – my zajmiemy się resztą!
                   </p>
                 </div>
               </div>

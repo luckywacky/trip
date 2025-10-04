@@ -51,10 +51,10 @@ const ContactForm = () => {
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">
-              Rozpocznij zarabianie na swoich wyjazdach!
+              Zacznij zarabiać już dziś!
             </h2>
             <p className="text-lg text-muted-foreground">
-              Zostaw nam kontakt, a nasz zespół pokaże Ci, jak zarabiać na swoich wyjazdach.
+              Zostaw kontakt, porozmawiajmy.
             </p>
           </div>
 
