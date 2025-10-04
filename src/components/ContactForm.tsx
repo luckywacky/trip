@@ -67,7 +67,7 @@ const ContactForm = () => {
       if (error.code === '23505') {
         toast({
           title: 'Ten email juz jest zapisany!',
-          description: 'Nie moeszesz sie zapisac dwa razy.',
+          description: 'Nie możesz zapisać się dwa razy.',
         });
       }
       console.log('error!', error);
