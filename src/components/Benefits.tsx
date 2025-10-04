@@ -9,7 +9,7 @@ const benefits = [
   {
     icon: Shield,
     title: "Pełna ochrona",
-    description: "Prawo, licencje i ubezpieczenia zapewniamy my. Ty skupiasz się na pasji, a my dbamy o bezpieczeństwo Twoje i uczestników."
+    description: "Zapewniona pełna ochrona prawna, licencja i ubezpieczenia. Ty skupiasz się na pasji, a my dbamy o bezpieczeństwo Twoje i uczestników."
   },
   {
     icon: MessageCircle,
@@ -23,7 +23,7 @@ const Benefits = () => {
     <section className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 text-foreground">
-          Organizacja wyjazdów bez komplikacji
+          Przyjemny proces organizacji wyjazdów
         </h2>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">

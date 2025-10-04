@@ -6,8 +6,8 @@ const EarningsSlider = () => {
   const [participants, setParticipants] = useState([15]);
   
   const calculateEarnings = (value: number) => {
-    // 1 person = 1000 zł
-    return value * 1000;
+    // 1 person = 1200 zł
+    return value * 1200;
   };
 
   const earnings = calculateEarnings(participants[0]);
@@ -21,7 +21,7 @@ const EarningsSlider = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-4">
-            Twój zysk z pasji – zobacz, ile możesz zarobić na wyjazdach!
+            Sprawdź, ile inni zarobili na wyjazdach z nami
           </h2>
           
           <div className="bg-card rounded-2xl shadow-lg p-6 sm:p-8 lg:p-10 mt-8">
