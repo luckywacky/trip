@@ -4,7 +4,7 @@ const benefits = [
   {
     icon: DollarSign,
     title: "Zarabiaj na pasji",
-    description: "Organizuj wyjazdy tematyczne i retreaty. Zyskaj dodatkowe tysiące złotych, dzieląc się tym, co kochasz."
+    description: "Organizuj wyjazdy z aktywnością. Zyskaj dodatkowe tysiące złotych, dzieląc się tym, co kochasz."
   },
   {
     icon: Shield,
