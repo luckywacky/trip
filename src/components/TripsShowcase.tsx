@@ -1,4 +1,6 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const trips = [
   {
@@ -60,11 +62,16 @@ const TripsShowcase = () => {
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {trip.description}
                 </p>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mb-4">
                   <span className="text-2xl font-bold text-primary">
                     {trip.price}
                   </span>
                 </div>
+                <Link to="/reservation">
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
+                    Zarezerwuj wycieczkę
+                  </Button>
+                </Link>
               </div>
             </Card>
           ))}
