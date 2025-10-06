@@ -45,12 +45,9 @@ const TripsCTA = () => {
     <section id="reservation-form" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-foreground">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-foreground">
             Zarezerwuj Swoją Zniżkę
           </h2>
-          <p className="text-center text-muted-foreground mb-8">
-            Zostaw kontakt, porozmawiajmy.
-          </p>
           
           <form onSubmit={handleSubmit} className="space-y-6 bg-card p-8 rounded-xl shadow-sm">
             <div>
@@ -81,7 +78,7 @@ const TripsCTA = () => {
               type="submit" 
               className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-6 text-lg"
             >
-              Zarezerwuj zniżkę
+              Zarezerwuj Swoją Zniżkę!
             </Button>
           </form>
         </div>

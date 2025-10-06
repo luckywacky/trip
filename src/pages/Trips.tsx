@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TripsShowcase from "@/components/TripsShowcase";
@@ -6,8 +5,6 @@ import TripsCTA from "@/components/TripsCTA";
 import heroImage from "@/assets/hero-mountains-group.jpg";
 
 const Trips = () => {
-  const [spotsLeft] = useState(12); // Dynamic counter for remaining spots
-
   return (
     <div className="min-h-screen">
       <Header />
@@ -27,22 +24,8 @@ const Trips = () => {
                 Odbierz 500 zł na pierwszy wyjazd
               </h1>
               
-              <p className="text-xl sm:text-2xl text-white/90 mb-6 font-semibold">
+              <p className="text-xl sm:text-2xl text-white/90 font-semibold">
                 Oferta kończy się wkrótce!
-              </p>
-
-              {/* Limited Spots Counter */}
-              <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-lg px-8 py-4 mb-6">
-                <p className="text-white text-lg sm:text-xl mb-2">
-                  🔥 Oferta limitowana dla pierwszych 50 uczestników
-                </p>
-                <p className="text-white text-2xl sm:text-3xl font-bold">
-                  Zostało tylko <span className="text-primary">{spotsLeft}</span> miejsc!
-                </p>
-              </div>
-
-              <p className="text-lg sm:text-xl text-white/90 leading-relaxed max-w-2xl">
-                Wybierz spośród unikalnych wyjazdów, które łączą pasję, relaks i niezapomniane doświadczenia.
               </p>
             </div>
           </div>
