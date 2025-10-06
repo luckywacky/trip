@@ -24,9 +24,13 @@ const Trips = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-4xl mx-auto flex flex-col items-center justify-center text-center">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Zarezerwuj 500 zł zniżki na pierwszy wyjazd
+                Odbierz 500 zł na pierwszy wyjazd
               </h1>
               
+              <p className="text-xl sm:text-2xl text-white/90 mb-6 font-semibold">
+                Oferta kończy się wkrótce!
+              </p>
+
               {/* Limited Spots Counter */}
               <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-lg px-8 py-4 mb-6">
                 <p className="text-white text-lg sm:text-xl mb-2">

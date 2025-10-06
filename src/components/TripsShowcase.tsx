@@ -1,47 +1,51 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 const trips = [
   {
-    title: "Digital Detox Retreat w Górach",
-    description: "Odłącz się od ekranów i ciesz się naturą, medytacją i jogą.",
-    price: "2 500 zł",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop"
+    title: "Narty w Szwajcarii",
+    description: "Zimowy wyjazd na narty w Alpach szwajcarskich, dla każdego poziomu zaawansowania.",
+    price: "4 500 zł",
+    image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop"
   },
   {
-    title: "Weekend Jogi i Wellness nad Jeziorem",
-    description: "Odpręż się podczas codziennych zajęć jogi, zdrowych posiłków i prowadzonych medytacji.",
-    price: "1 800 zł",
+    title: "Tajlandia Muay Thai",
+    description: "Intensywne treningi Muay Thai połączone z egzotycznym wypoczynkiem.",
+    price: "3 800 zł",
+    image: "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800&h=600&fit=crop"
+  },
+  {
+    title: "Pilates Bali",
+    description: "Relaks i trening pilates w tropikalnym otoczeniu.",
+    price: "3 200 zł",
     image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop"
   },
   {
-    title: "Fotograficzna Przygoda na Wsi",
-    description: "Uchwyć zapierające dech w piersiach krajobrazy i ucz się fotografii od ekspertów.",
-    price: "2 200 zł",
-    image: "https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?w=800&h=600&fit=crop"
+    title: "Sylwester w Dubaju",
+    description: "Niezapomniana zabawa sylwestrowa z luksusowymi atrakcjami.",
+    price: "5 500 zł",
+    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop"
   },
   {
-    title: "Retreat Pisarski w Historycznym Mieście",
-    description: "Rozwijaj swoją kreatywność podczas warsztatów w inspirującej lokalizacji.",
-    price: "2 000 zł",
-    image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&h=600&fit=crop"
+    title: "Laplandia przed Świętami",
+    description: "Magiczny wyjazd na północ, spotkania ze świętym Mikołajem i zimowe atrakcje.",
+    price: "4 200 zł",
+    image: "https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=800&h=600&fit=crop"
   },
   {
-    title: "Doświadczenie Kulinarne i Pobyt na Farmie",
-    description: "Ucz się lokalnych przepisów, gotuj ze świeżych składników i delektuj się autentycznymi posiłkami.",
-    price: "1 900 zł",
-    image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&h=600&fit=crop"
-  },
-  {
-    title: "Rejs i Mindfulness",
-    description: "Połącz naukę żeglarstwa z ćwiczeniami uważności i widokami na ocean.",
-    price: "3 200 zł",
-    image: "https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=800&h=600&fit=crop"
+    title: "Halloween w Nowym Jorku",
+    description: "Wyjątkowe doświadczenie Halloween w sercu NYC, parady i wydarzenia tematyczne.",
+    price: "4 800 zł",
+    image: "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=800&h=600&fit=crop"
   }
 ];
 
 const TripsShowcase = () => {
+  const scrollToForm = () => {
+    const formSection = document.getElementById('reservation-form');
+    formSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,11 +71,12 @@ const TripsShowcase = () => {
                     {trip.price}
                   </span>
                 </div>
-                <Link to="/reservation">
-                  <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
-                    Zarezerwuj wycieczkę
-                  </Button>
-                </Link>
+                <Button 
+                  onClick={scrollToForm}
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+                >
+                  Odbierz zniżkę
+                </Button>
               </div>
             </Card>
           ))}
