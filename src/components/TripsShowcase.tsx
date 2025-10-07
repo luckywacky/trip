@@ -54,17 +54,17 @@ const TripsShowcase = () => {
           {trips.map((trip, index) => (
             <Card 
               key={index}
-              className="overflow-hidden hover:shadow-lg transition-shadow"
+              className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
             >
               <div 
-                className="h-48 bg-cover bg-center"
+                className="h-48 bg-cover bg-center flex-shrink-0"
                 style={{ backgroundImage: `url(${trip.image})` }}
               />
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold mb-2 text-foreground">
                   {trip.title}
                 </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
+                <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
                   {trip.description}
                 </p>
                 <div className="flex items-center justify-between mb-4">
@@ -74,7 +74,7 @@ const TripsShowcase = () => {
                 </div>
                 <Button 
                   onClick={scrollToForm}
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold mt-auto"
                 >
                   Pobierz kod na 500 zł
                 </Button>
