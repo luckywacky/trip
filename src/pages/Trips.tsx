@@ -2,9 +2,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TripsShowcase from "@/components/TripsShowcase";
 import TripsCTA from "@/components/TripsCTA";
+import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-mountains-group.jpg";
 
 const Trips = () => {
+  const scrollToForm = () => {
+    const formSection = document.getElementById('reservation-form');
+    formSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -24,9 +30,17 @@ const Trips = () => {
                 Odbierz 500 zł na pierwszy wyjazd
               </h1>
               
-              <p className="text-xl sm:text-2xl text-white/90 font-semibold">
+              <p className="text-xl sm:text-2xl text-white/90 font-semibold mb-8">
                 Oferta kończy się wkrótce!
               </p>
+
+              <Button 
+                onClick={scrollToForm}
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-12 py-6 h-auto"
+              >
+                Odbieram Rabat
+              </Button>
             </div>
           </div>
         </section>

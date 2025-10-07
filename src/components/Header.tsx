@@ -20,7 +20,7 @@ const Header = () => {
             onClick={scrollToContact}
             className="bg-primary hover:bg-primary/90 text-primary-foreground"
           >
-            Skontaktuj się
+            Odbieram Rabat
           </Button>
         </div>
       </div>

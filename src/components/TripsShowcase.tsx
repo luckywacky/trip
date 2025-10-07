@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import japanImage from "@/assets/trip-japan-cherry-blossom.jpg";
 
 const trips = [
   {
@@ -27,10 +28,10 @@ const trips = [
     image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop"
   },
   {
-    title: "Laplandia przed Świętami",
-    description: "Magiczny wyjazd na północ, spotkania ze świętym Mikołajem i zimowe atrakcje.",
-    price: "4 200 zł",
-    image: "https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=800&h=600&fit=crop"
+    title: "Japonia w Sezonie Sakury",
+    description: "Wiosenny wyjazd do Japonii w okresie kwitnienia wiśni, pełen kultury i niezapomnianych widoków.",
+    price: "5 200 zł",
+    image: japanImage
   },
   {
     title: "Halloween w Nowym Jorku",
@@ -75,7 +76,7 @@ const TripsShowcase = () => {
                   onClick={scrollToForm}
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
                 >
-                  Odbierz zniżkę
+                  Pobierz kod na 500 zł
                 </Button>
               </div>
             </Card>

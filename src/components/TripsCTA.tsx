@@ -8,13 +8,14 @@ const TripsCTA = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     firstName: "",
+    lastName: "",
     email: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!formData.firstName || !formData.email) {
+    if (!formData.firstName || !formData.lastName || !formData.email) {
       toast({
         title: "Błąd",
         description: "Proszę wypełnić wszystkie pola",
@@ -38,7 +39,7 @@ const TripsCTA = () => {
       description: "Wkrótce się z Tobą skontaktujemy.",
     });
 
-    setFormData({ firstName: "", email: "" });
+    setFormData({ firstName: "", lastName: "", email: "" });
   };
 
   return (
@@ -63,7 +64,19 @@ const TripsCTA = () => {
             </div>
             
             <div>
-              <Label htmlFor="email" className="text-foreground">Adres email</Label>
+              <Label htmlFor="lastName" className="text-foreground">Nazwisko</Label>
+              <Input
+                id="lastName"
+                type="text"
+                value={formData.lastName}
+                onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                className="mt-2"
+                placeholder="Twoje nazwisko"
+              />
+            </div>
+            
+            <div>
+              <Label htmlFor="email" className="text-foreground">Adres e-mail</Label>
               <Input
                 id="email"
                 type="email"
