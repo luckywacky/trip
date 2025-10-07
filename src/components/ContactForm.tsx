@@ -1,19 +1,14 @@
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { useToast } from '@/hooks/use-toast';
-import { createClient } from '@supabase/supabase-js';
-
-const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL,
-  import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
-);
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/App";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    email: '',
+    firstName: "",
+    email: "",
   });
   const { toast } = useToast();
 
@@ -23,9 +18,9 @@ const ContactForm = () => {
     // Basic validation
     if (!formData.firstName || !formData.email) {
       toast({
-        title: 'Wypełnij wszystkie pola',
-        description: 'Proszę podać imię i adres email.',
-        variant: 'destructive',
+        title: "Wypełnij wszystkie pola",
+        description: "Proszę podać imię i adres email.",
+        variant: "destructive",
       });
       return;
     }
@@ -34,9 +29,9 @@ const ContactForm = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       toast({
-        title: 'Nieprawidłowy email',
-        description: 'Proszę podać poprawny adres email.',
-        variant: 'destructive',
+        title: "Nieprawidłowy email",
+        description: "Proszę podać poprawny adres email.",
+        variant: "destructive",
       });
       return;
     }
@@ -45,32 +40,32 @@ const ContactForm = () => {
     await sendToSupabase(formData.email, formData.firstName);
 
     // Reset form
-    setFormData({ firstName: '', email: '' });
+    setFormData({ firstName: "", email: "" });
   };
 
   async function sendToSupabase(email: string, name: string) {
     try {
       const { error } = await supabase
-        .from('newsletter')
+        .from("newsletter")
         .insert([{ email, name }]);
       if (error) {
         throw error;
       }
 
-      console.log('Success!');
+      console.log("Success!");
 
       toast({
-        title: 'Dziękujemy!',
-        description: 'Skontaktujemy się z Tobą wkrótce.',
+        title: "Dziękujemy!",
+        description: "Skontaktujemy się z Tobą wkrótce.",
       });
     } catch (error) {
-      if (error.code === '23505') {
+      if (error.code === "23505") {
         toast({
-          title: 'Ten email juz jest zapisany!',
-          description: 'Nie możesz zapisać się dwa razy.',
+          title: "Ten email juz jest zapisany!",
+          description: "Nie możesz zapisać się dwa razy.",
         });
       }
-      console.log('error!', error);
+      console.log("error!", error);
     }
   }
 
