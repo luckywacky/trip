@@ -42,9 +42,9 @@ const Trips = () => {
                   <Button 
                     onClick={scrollToForm}
                     size="lg"
-                    className="relative bg-white hover:bg-white/90 text-black font-bold text-xl px-16 py-8 h-auto shadow-2xl hover:shadow-white/50 transition-all duration-300 hover:scale-105 backdrop-blur-sm border-2 border-white/20"
+                    className="relative bg-white hover:bg-white/90 text-black font-bold text-lg px-10 py-6 h-auto shadow-2xl hover:shadow-white/50 transition-all duration-300 hover:scale-105 backdrop-blur-sm border-2 border-white/20"
                   >
-                    Odbieram Rabat
+                    Odbieram kod!
                   </Button>
                 </div>
               </div>
