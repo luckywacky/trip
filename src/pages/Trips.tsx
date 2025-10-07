@@ -38,11 +38,11 @@ const Trips = () => {
 
               <div className="pb-12">
                 <div className="relative inline-block">
-                  <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full" />
+                  <div className="absolute inset-0 bg-white/30 blur-xl rounded-full" />
                   <Button 
                     onClick={scrollToForm}
                     size="lg"
-                    className="relative bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl px-16 py-8 h-auto shadow-2xl hover:shadow-primary/50 transition-all duration-300 hover:scale-105 backdrop-blur-sm border-2 border-primary-foreground/10"
+                    className="relative bg-white hover:bg-white/90 text-black font-bold text-xl px-16 py-8 h-auto shadow-2xl hover:shadow-white/50 transition-all duration-300 hover:scale-105 backdrop-blur-sm border-2 border-white/20"
                   >
                     Odbieram Rabat
                   </Button>

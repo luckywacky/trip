@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/button";
 const Header = () => {
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact-form');
-    contactSection?.scrollIntoView({ behavior: 'smooth' });
+    const reservationSection = document.getElementById('reservation-form');
+    const targetSection = contactSection || reservationSection;
+    targetSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
