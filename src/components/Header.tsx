@@ -1,10 +1,16 @@
 import { Plane } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const Header = () => {
+interface HeaderProps {
+  buttonText?: string;
+}
+
+const Header = ({ buttonText = "Skontaktuj się" }: HeaderProps) => {
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact-form');
-    contactSection?.scrollIntoView({ behavior: 'smooth' });
+    const reservationSection = document.getElementById('reservation-form');
+    const targetSection = contactSection || reservationSection;
+    targetSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -20,7 +26,7 @@ const Header = () => {
             onClick={scrollToContact}
             className="bg-primary hover:bg-primary/90 text-primary-foreground"
           >
-            Skontaktuj się
+            {buttonText}
           </Button>
         </div>
       </div>
