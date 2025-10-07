@@ -13,7 +13,7 @@ const Trips = () => {
 
   return (
     <div className="min-h-screen">
-      <Header />
+      <Header buttonText="Odbieram kod!" />
       <main className="pt-16">
         {/* Hero Section */}
         <section className="relative min-h-[500px] lg:min-h-[600px] flex items-center overflow-hidden">
